@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Mission 2 documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
 
-## Available Scripts
+- Project
+  - [Overview](#1-project)
 
-In the project directory, you can run:
+- API
+  - [Custom Vision ](#microsoft-custom-vision-image-analysis-api-overview)
 
-### `npm start`
+- [Contribute](#5-contribute)
+- [Contact](#6-contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 1. Project
+#### *Overview*:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The mission-2 project aims to create an application enabling users to upload car photos, submit them to the Custom Vision API for model predictions, and receive results. To enhance functionality, future improvements include the implementation of a backend server for added logic, integration of a database for storing user submissions and suggesting similar cars, and securing sensitive information such as API keys and endpoints by utilizing a .env file. These enhancements are expected to elevate the application's scalability, provide personalized user suggestions, and bolster security measures, setting the stage for continuous development and refinement.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#mission-2-documentation">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 2. API's
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### *Microsoft Custom Vision Image Analysis API Overview*
 
-### `npm run eject`
+#### Description
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Microsoft Custom Vision Image Analysis API empowers developers to build applications capable of recognizing and classifying objects within images. Leveraging machine learning models, this API provides a cloud-based solution for image classification, enabling a wide range of applications, from content moderation to object detection.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Image Classification:**
+   - Utilizes machine learning models to classify images based on predefined categories.
+   - Enables developers to train custom models tailored to specific use cases.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Customization:**
+   - Allows developers to create custom image classification models using labeled training data.
+   - Supports continuous refinement of models for improved accuracy.
 
-## Learn More
+3. **Predictions:**
+   - Provides a RESTful API endpoint for making predictions on new images.
+   - Returns probability scores for each predicted class, aiding in decision-making.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Integration with Other Services:**
+   - Seamlessly integrates with other Microsoft Azure services, facilitating a comprehensive cloud-based solution.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Usage
 
-### Code Splitting
+- **Endpoint:** Custom endpoint generated for the trained model.
+- **HTTP Method:** POST (for making predictions).
+- **Request Body:** Image data in the request payload.
+- **Response:** JSON containing predictions, including class labels and corresponding confidence scores.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Dependencies
 
-### Analyzing the Bundle Size
+1. **Azure Custom Vision Service:**
+   - The API is part of the Azure Cognitive Services suite, leveraging the power of Microsoft Azure for machine learning capabilities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Potential Improvements/Considerations
 
-### Making a Progressive Web App
+1. **Documentation:**
+   - Comprehensive documentation with examples, guides, and API reference to assist developers in using the service effectively.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **SDKs and Libraries:**
+   - Provides Software Development Kits (SDKs) and client libraries for popular programming languages, enhancing ease of integration.
 
-### Advanced Configuration
+3. **Security:**
+   - Implements secure communication protocols, such as HTTPS, for data transmission.
+   - Ensures robust authentication mechanisms, potentially leveraging Azure Active Directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. **Rate Limiting and Pricing:**
+   - Clearly defines rate limiting policies to prevent abuse.
+   - Transparent pricing model with considerations for usage tiers and potential cost implications.
 
-### Deployment
+5. **Webhooks:**
+   - Offers webhook support for real-time notifications or integration with event-driven architectures.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+6. **Model Monitoring:**
+   - Implements tools for monitoring model performance and potentially retraining models based on evolving data patterns.
 
-### `npm run build` fails to minify
+7. **Global Availability:**
+   - Ensures availability in multiple regions for low-latency access and compliance with data residency requirements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. **Scalability:**
+   - Adaptable to varying workloads and scales seamlessly based on demand.
+
+Remember, the effectiveness of the Microsoft Custom Vision Image Analysis API depends on the quality and diversity of the training data provided. Regular model evaluation and updates based on changing requirements contribute to its continued success in diverse applications.
+
+
+
+
+
+
+
+<p align="right">(<a href="#mission-2-documentation">back to top</a>)</p>
+
+## 5. Contribute 
+
+
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+## 6. Contact 
+
+- Ben Walker: Ben@missionreadyhq.com
+- Project Link: https://github.com/Walks99/Level-5-Mission-1.git
+
+<p align="right">(<a href="#mission-2-documentation">back to top</a>)</p>
+
+
+
+
+
